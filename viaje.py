@@ -10,10 +10,13 @@ class Viaje:
         self.tarifa = 0
         self.estado = "PENDIENTE"
 
-    # IMPLEMENTAR metodo
+    #Calcular tarifa medianto los kh recorridos
     def calcularTarifa(self):
+        tarifa = 1500
 
-        pass
+        for tarifa in self.distancia:
+            tarifa += 800
+        
 
     def iniciar(self):
 

@@ -30,8 +30,10 @@ class Pasajero(Persona):
         print("Error: el viaje no puede ser cancelado.")
         return False
 
-    #IMPLEMENTAR METODO
     def calificarViaje(self, viaje, puntuacion):
-
-        pass
+        if viaje.estado == "FINALIZADO" and 1 <= puntuacion <= 5:
+            viaje.calificacionPromedio = puntuacion
+            return True
+        print("De 1 a 5, califique su viaje")
+        return False
 

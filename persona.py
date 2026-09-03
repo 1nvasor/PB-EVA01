@@ -9,10 +9,10 @@ class Persona:
     def iniciarSesion(self):
         return True
 
-
-    #Realizar este metodo para actualizar el telefono de la persona
-    def actualizarTelefono(self, telefono):
-        pass
+    #Actualizamos el numero de la persona
+    def actualizarTelefono(self, nuevo_telefono):
+        self.telefono = nuevo_telefono
+        print("Telefono actualizado")
 
     def obtenerNombre(self):
         return self.nombre
